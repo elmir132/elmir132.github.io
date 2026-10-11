@@ -59,6 +59,8 @@ section { padding:44px 0 8px; scroll-margin-top:48px; }
 h2 { font-size:1.35rem; margin:0 0 18px; display:flex; align-items:center; gap:10px; }
 h2::before { content:""; width:22px; height:4px; border-radius:2px; background:var(--teal); }
 .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-bottom:14px; }
+.card .shot { display:block; margin:-18px -20px 14px; border-bottom:1px solid var(--line); border-radius:12px 12px 0 0; overflow:hidden; aspect-ratio:16/9; background:var(--line); }
+.card .shot img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
 .card h3 { margin:0 0 2px; font-size:1.05rem; }
 .meta { color:var(--dim); font-size:.9rem; margin:0 0 8px; }
 .card p { margin:6px 0; color:var(--muted); }
@@ -158,13 +160,13 @@ footer { margin-top:48px; border-top:1px solid var(--line); padding:26px 0 40px;
 <section id="projects">
   <h2>Projects</h2>
   <div class="grid2">
-    <div class="card"><h3><a href="https://github.com/elmir132/streetscript">StreetScript, 1st place at AI Agents Hack Night</a></h3>
+    <div class="card"><a class="shot" href="https://github.com/elmir132/streetscript"><img src="img/proj-streetscript.jpg" alt="StreetScript screenshot: a message assembled from words cut out of old New York storefront photographs" width="1200" height="675" loading="lazy" decoding="async"></a><h3><a href="https://github.com/elmir132/streetscript">StreetScript, 1st place at AI Agents Hack Night</a></h3>
       <p>Team project from the Mistral AI x Elasticsearch hack night in New York. It writes poems and letters using only words cut from 1940s NYC storefront photographs, and a strict check rejects any word with no photograph behind it. I built the Rearrange feature, a hybrid word search and Mistral moderation.</p>
       <div class="chips"><span class="chip">Python</span><span class="chip">Elasticsearch</span><span class="chip">Mistral</span><span class="chip">team of 4</span></div></div>
-    <div class="card"><h3><a href="https://github.com/elmir132/advocate">Advocate, a live interpreter that flags what was not a promise</a></h3>
+    <div class="card"><a class="shot" href="https://github.com/elmir132/advocate"><img src="img/proj-advocate.jpg" alt="Advocate screenshot: a translated conversation where one landlord line is marked as a soft no and another as a promise" width="1200" height="675" loading="lazy" decoding="async"></a><h3><a href="https://github.com/elmir132/advocate">Advocate, a live interpreter that flags what was not a promise</a></h3>
       <p>Built in one day at a Google DeepMind hackathon in New York. A renter and a landlord talk through one button: it works out who spoke from the language, translates both ways, and marks the landlord's vague lines, promises and money terms, then writes a two-language summary only after the renter approves. On 20 scripted lines it reached 0.90 precision and 1.00 recall. Not legal advice. <a href="https://elmirabd.me/advocate/">Scripted demo</a>.</p>
       <div class="chips"><span class="chip">Gemini Live</span><span class="chip">FastAPI</span><span class="chip">JavaScript</span><span class="chip">built with AI coding agents</span></div></div>
-    <div class="card"><h3><a href="https://github.com/elmir132/pharos">PharOS, street-safety map and near-miss candidates</a></h3>
+    <div class="card"><a class="shot" href="https://github.com/elmir132/pharos"><img src="img/proj-pharos.jpg" alt="PharOS screenshot: my 3D map of Manhattan showing a year of crash history and a ranked list of intersections" width="1200" height="675" loading="lazy" decoding="async"></a><h3><a href="https://github.com/elmir132/pharos">PharOS, street-safety map and near-miss candidates</a></h3>
       <p>Team project from the Real-Time Video Agents Hack in New York. A 3D Manhattan map of a year of crash reports, DOT cameras and live street-video analysis. I built the near-miss measurement (approximate distance and time to collision, shown as candidates for human review) and the shared map color scale. Accuracy was not measured.</p>
       <div class="chips"><span class="chip">React</span><span class="chip">FastAPI</span><span class="chip">YOLO11</span><span class="chip">team of 4</span></div></div>
     <div class="card"><h3><a href="https://github.com/elmir132/hermes">Hermes, production RAG assistant</a></h3>
