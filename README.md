@@ -6,7 +6,7 @@ Source of my portfolio site, [elmirabd.me](https://elmirabd.me): research, proje
 
 ## How it is built
 
-A single static page. There is no build step and no framework: `index.html` holds the markup, styles and a little script, and it supports light and dark mode and phone widths. It is served by GitHub Pages on the custom domain in `CNAME`.
+A single static page. There is no build step and no framework: `index.html` holds the markup and the styles, with no JavaScript, and it supports light and dark mode and phone widths. It is served by GitHub Pages on the custom domain in `CNAME`.
 
 | Path | What it is |
 |---|---|
