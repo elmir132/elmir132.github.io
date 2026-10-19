@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes privacy policy | Elmir Abdullaiev</title>
+<meta name="description" content="Privacy policy for Hermes, a personal Telegram assistant used only by its owner.">
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#faf7f2;--ink:#1d1b18;--muted:#5d574f;--line:#e4ddd2;--accent:#a3461f}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1917;--ink:#ece7df;--muted:#b3aba0;--line:#3a3530;--accent:#e08a5c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:56px 20px 64px}
+h1{font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 6px}
+h2{font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;font-size:1.25rem;margin:32px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+p,li{color:var(--ink)}.muted{color:var(--muted)}a{color:var(--accent)}ul{padding-left:20px}
+</style>
+</head>
+<body>
+<main>
+<h1>Hermes privacy policy</h1>
+<p class="muted">Last updated October 19, 2026</p>
+
+<p>Hermes is a personal Telegram assistant built and run by Elmir Abdullaiev. It answers only one allow-listed Telegram user, its owner. It is not offered to anyone else, and no one else can sign in to it.</p>
+
+<h2>What it accesses</h2>
+<p>When the owner signs in with Google, Hermes asks for two permissions:</p>
+<ul>
+<li><b>Gmail, read-only</b> (<code>gmail.readonly</code>): to read selected emails, such as campus event and job-alert emails, and send the owner a short daily summary. It cannot send, delete or change email.</li>
+<li><b>Google Calendar</b> (<code>calendar</code>): to read the owner's calendar and add or change events when the owner asks it to.</li>
+</ul>
+
+<h2>How the data is used</h2>
+<ul>
+<li>Data is used only to answer the owner's own requests and to send the owner summaries in Telegram.</li>
+<li>The text of the emails being summarised is sent to Google's Gemini API to write the summary.</li>
+<li>Google sign-in tokens and the assistant's conversation memory are stored on the owner's private server. They are not shared, sold or used for advertising.</li>
+<li>Use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</li>
+</ul>
+
+<h2>Removing access</h2>
+<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking it stops Hermes from reading Gmail or Calendar immediately.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:ea488@cornell.edu">ea488@cornell.edu</a> · <a href="https://github.com/elmir132/hermes">Source code on GitHub</a> · <a href="https://elmirabd.me">elmirabd.me</a></p>
+</main>
+</body>
+</html>
